@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Nutriciencia</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Sobre nosotros</a></li>
-            <li><a href="/views/servicios.html">Servicios</a></li>
-            <li><a href="/views/Turnos.html">Pide un turno</a></li>
-            <li><a href="/views/contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-    
+    <header class="header">
+        <h1 class="logo">
+            <img  src="" alt="Logo">
+        </h1>
+        <button class="button">
+            <svg class='svg' xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+        </button>
+        <nav class="nav activo" >
+            <ul class="ul">
+                <li class="li"><a href="" class="a">Sobre nosotros</a></li>
+                <li class="li"><a href="./views/Turnos.html" class="a">Pedi un turno</a></li>
+                <li class="li"><a href="./views/servicios.html" class="a">Servicios</a></li>
+                <li class="li"><a href="./views/contacto.html" class="a">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
