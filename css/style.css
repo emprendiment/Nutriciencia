@@ -8,14 +8,15 @@
 }
 :root{
     --primary:#00AEB5;
+    --primaryDark:#17232F;
     --secondary:#ffff;
     --terciary:#FF5087;
     --dark:#000000;
 }
-
+/*NAVEGACION*/
 .header{
     width: 100%;
-    background-color: var(--primary);
+    background-color: var(--primaryDark);
     padding: 0.5rem;
 
     display: flex;
@@ -33,13 +34,14 @@
     fill: black;
 }
 .header .nav{
-    font-size: 20px;
+    
 }
 .header .a{
-    color: var(--secondary);
+    font-size: 2.50rem;
+    color: var(--primary);
 }
 .header .a:hover{
-    color: var(--dark);
+    color: var(--terciary);
 }
 
 .header .ul{
@@ -52,7 +54,11 @@
 .header .li{
     margin: 1rem;
 }
+.img{
+    width: 12rem;
+    height: 12rem;
 
+}
 @media screen and (max-width:480px) {
     .header .button{
         cursor: pointer;
@@ -82,5 +88,12 @@
     }
     .header .li{
         margin: 2rem 0;
+    }
+    .header .a{
+        font-size: 1.50rem;
+    }
+    .img{
+        height: 8rem;
+        width: 8rem;
     }
 }

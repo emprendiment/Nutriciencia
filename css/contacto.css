@@ -1,0 +1,85 @@
+
+:root{
+    --primary:#00AEB5;
+    --primaryDark:#17232F;
+    --secondary:#ffff;
+    --terciary:#FF5087;
+    --dark:#000000;
+}
+body{
+    background-color:var(--primary) ;
+}
+.main-contact{
+    display: flex;
+    justify-content: center;
+    margin-top: 35rem;
+}
+.section-contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 0.25rem;
+    box-shadow: 0px 5px 10px var(--dark);
+    background: var(--primaryDark);
+    padding: 5rem;
+    width: 80%;
+}
+
+.h2-contact{
+    font-size: 3rem;
+    color: var(--secondary);
+    margin-bottom: 2rem;
+}
+.h3-contact{
+    font-size: 6rem;
+    color: var(--secondary);
+    margin-bottom: 2rem;
+}
+.p-contact{
+    font-size: 2.25rem;
+    line-height: 5rem;
+    color: var(--secondary);
+}
+.img-contact{
+    box-shadow: 0px 2px 0px var(--secondary);
+    height: 50rem;
+    width: 60rem;
+    border-radius: 0.5rem;
+}
+.a-contact img{
+    height: 3rem;
+    width: 3rem;
+}
+
+@media screen and (max-width:480px) {
+    .main-contact{
+        margin-top: 10rem;
+    }
+    .section-contact{
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        width: 100%;
+    }
+    .img-contact{
+        margin-top: 1.25rem;
+        height: 20rem;
+        width: 20rem;
+    }
+    .h2-contact{
+        font-size: 2rem;
+    }
+    .h3-contact{
+        font-size: 2rem;
+    }
+    .p-contact{
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+    }
+    .a-contact img{
+        margin-top: 2rem;
+        height: 2rem;
+        width: 2rem;
+    }
+}
