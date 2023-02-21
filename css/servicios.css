@@ -1,0 +1,80 @@
+:root{
+    --primary:#00AEB5;
+    --primaryDark:#17232F;
+    --secondary:#ffff;
+    --terciary:#FF5087;
+    --dark:#000000;
+}
+
+
+.aling{
+    display: flex;
+    justify-content: center;
+}
+.art-content{
+    display: flex;
+    align-items: center;
+    flex-direction:column ;
+    text-align: center;
+    width: 40%;
+    margin-top: 2rem;
+    border: 1px solid;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 18px;
+    color: var(--secondary);
+    background: var(--primaryDark);
+}
+.precio{
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+.img-content{
+    background: var(--secondary);
+    border-radius: 50%;
+}
+.btn-content{
+    background: var(--terciary);
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+}
+.btn-content:hover{
+    background: var(--secondary);
+}
+/*Calculadora de IMC*/
+.calculator{
+    text-align: center;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: #17232F;
+    width: 40%;
+    border-radius: 5px;
+    color: var(--secondary);
+    padding: 2rem;
+}
+.input{
+    border: none;
+    text-align: center;
+    width: 200px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:480px) {
+    .art-content{
+        width: 100%;
+    }
+    .calculator{
+        width: 100%;
+    }
+}
