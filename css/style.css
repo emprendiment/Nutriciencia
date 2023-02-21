@@ -106,11 +106,11 @@
 
 .container-hero{
     height: 80vh;
-    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url(../assets/header\(NUESTRO\).jpg);
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url(../assets/IMG_6252.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     color: var(--secondary);
@@ -135,7 +135,7 @@
 .container {  
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2,25rem);
+    grid-template-rows: repeat(2,20rem);
     /* grid-auto-columns: 2fr; */
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -159,6 +159,8 @@
   
 .nosotros_parrafo_segunda {
     grid-area: 2 / 2 / 3 / 3; 
+    margin-top: 1rem;
+    margin-left: 2rem;
 }
   
 .nosotros_imagen_primera { 
@@ -171,5 +173,48 @@
   
 .nosotros_parrafo_primera { 
     grid-area: 1 / 1 / 2 / 2; 
+    margin-top: 1rem;
+    margin-left: 2rem;
 }
   
+
+.nosotros_title h3{
+    margin-bottom: 2rem;
+    font-size: 1.3em;
+    color: var(--primaryDark);
+}
+
+.nosotros_parrafo p{
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/*  CONTACTO  */
+
+.container_contact{
+    height: 60vh;
+    margin-top: 1rem;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(../assets/Sala_de_espera.jpg);
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: center;
+}
+
+.contact_title{
+    color: var(--secondary);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.contact_title h3{
+    margin-bottom: 2rem;
+}
+
+.btn_contact{
+    text-decoration: none;
+    color: var(--secondary);
+    background-color: var(--primaryDark);
+    padding: 25px 50px 25px 50px;
+}
