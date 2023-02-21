@@ -59,6 +59,15 @@
 .header .li{
     margin: 1rem;
 }
+
+.button_darkMode{
+    padding: 20px 40px 20px 40px;
+    background-color: var(--primaryDark);
+    border: none;
+    color: var(--secondary);
+    border: 1px solid var(--terciary);
+    cursor: pointer;
+}
 .img{
     width: 8rem;
     height: 8rem;
@@ -135,7 +144,7 @@
 .container {  
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2,20rem);
+    grid-template-rows: repeat(2,35rem);
     /* grid-auto-columns: 2fr; */
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -143,9 +152,11 @@
   
 .nosotros_imagenprimera { 
     grid-area: 1 / 2 / 2 / 3; 
-    background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(../assets/about1.jpg);
+    background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(../assets/about1.png   );
     background-position: center;
     background-size: cover;
+    display: inline-block;
+    
     background-position: center;
 }
   
@@ -155,33 +166,41 @@
     background-position: center;
     background-size: cover;
     background-position:  center;
+    display: inline-block;
+  
 }
   
 .nosotros_parrafo_segunda {
     grid-area: 2 / 2 / 3 / 3; 
     margin-top: 1rem;
     margin-left: 2rem;
+    display: inline-block;
+
 }
   
 .nosotros_imagen_primera { 
+    display: inline-block;
+    
     grid-area: 1 / 2 / 2 / 3; 
 }
   
 .nosotros_imagen_segunda { 
     grid-area: 2 / 1 / 3 / 2; 
+    display: inline-block;
+    
 }
   
 .nosotros_parrafo_primera { 
     grid-area: 1 / 1 / 2 / 2; 
     margin-top: 1rem;
     margin-left: 2rem;
+    display: inline-block;
 }
   
 
 .nosotros_title h3{
     margin-bottom: 2rem;
     font-size: 1.3em;
-    color: var(--primaryDark);
 }
 
 .nosotros_parrafo p{
@@ -192,10 +211,14 @@
 /*  CONTACTO  */
 
 .container_contact{
-    height: 60vh;
-    margin-top: 1rem;
+    margin-top: 32rem;
+    height: 70vh;
+    /* margin-top: 1rem; */
     background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(../assets/Sala_de_espera.jpg);
-    /* text-align: center; */
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -217,4 +240,41 @@
     color: var(--secondary);
     background-color: var(--primaryDark);
     padding: 25px 50px 25px 50px;
+}
+
+/* FOOTER */
+
+.container_footer{
+    height: 50vh;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primaryDark);
+    color: var(--secondary);
+    padding: 12rem;
+}
+
+.footer_logo img{
+    width: 10rem;
+    height: 10rem;
+}
+
+.footer_contact h6{
+    margin-bottom:1rem;
+    color: var(--terciary);
+    font-size: 22px;
+    margin-top: 1rem;
+}
+
+.footer_contact p{
+    margin-top: 1rem;
+    font-size: 17px;
+}
+
+/*DARK MODE*/
+
+.dark_mode{
+    background-color: var(--primaryDark);
+    color: var(--secondary);
 }
