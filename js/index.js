@@ -12,4 +12,16 @@ button.addEventListener('click',()=>{
     nav.classList.toggle('activo')
 });
 
+<<<<<<< HEAD
 //------------------------
+=======
+const btn_dark = document.getElementById('btn_dark');
+const main_all = document.querySelector('white_mode_all');
+
+
+btn_dark.addEventListener('click', (e)=>{
+        document.body.classList.toggle('dark_mode')
+});
+
+
+>>>>>>> 2fcc215211f54f89e5a366d1822dd2f96a25319d

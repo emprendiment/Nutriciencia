@@ -1,5 +1,10 @@
+ @import url('https://fonts.cdnfonts.com/css/nexa-bold');
+
+                
+
 
 *{
+    font-family: 'Nexa';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -33,12 +38,17 @@
     height: 2rem;
     fill: black;
 }
-.header .nav{
-    
-}
+
 .header .a{
+<<<<<<< HEAD
     font-size: 1.5rem;
     color: var(--primary);
+=======
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--secondary);
+>>>>>>> 2fcc215211f54f89e5a366d1822dd2f96a25319d
 }
 .header .a:hover{
     color: var(--terciary);
@@ -54,9 +64,23 @@
 .header .li{
     margin: 1rem;
 }
+
+.button_darkMode{
+    padding: 20px 40px 20px 40px;
+    background-color: var(--primaryDark);
+    border: none;
+    color: var(--secondary);
+    border: 1px solid var(--terciary);
+    cursor: pointer;
+}
 .img{
+<<<<<<< HEAD
     width: 10rem;
     height: 10rem;
+=======
+    width: 8rem;
+    height: 8rem;
+>>>>>>> 2fcc215211f54f89e5a366d1822dd2f96a25319d
 
 }
 @media screen and (max-width:480px) {
@@ -96,4 +120,171 @@
         height: 8rem;
         width: 8rem;
     }
+}
+/* HERO */
+
+.container-hero{
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url(../assets/IMG_6252.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    color: var(--secondary);
+    align-items: center;
+}
+
+.hero_title{
+    text-align: center;
+    font-size: 1.5rem;
+    /* margin: .5rem; */
+    /* padding: .8rem; */
+}
+
+
+/*SOBRE NOSOTROS*/
+
+.container_nosotros{
+    height: 100vh;
+    margin-top: 10rem;
+}
+
+.container {  
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2,35rem);
+    /* grid-auto-columns: 2fr; */
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+  
+.nosotros_imagenprimera { 
+    grid-area: 1 / 2 / 2 / 3; 
+    background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(../assets/about1.png   );
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    
+    background-position: center;
+}
+  
+.nosotros_imagensegunda { 
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)), url(../assets/about2.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-position:  center;
+    display: inline-block;
+  
+}
+  
+.nosotros_parrafo_segunda {
+    grid-area: 2 / 2 / 3 / 3; 
+    margin-top: 1rem;
+    margin-left: 2rem;
+    display: inline-block;
+
+}
+  
+.nosotros_imagen_primera { 
+    display: inline-block;
+    
+    grid-area: 1 / 2 / 2 / 3; 
+}
+  
+.nosotros_imagen_segunda { 
+    grid-area: 2 / 1 / 3 / 2; 
+    display: inline-block;
+    
+}
+  
+.nosotros_parrafo_primera { 
+    grid-area: 1 / 1 / 2 / 2; 
+    margin-top: 1rem;
+    margin-left: 2rem;
+    display: inline-block;
+}
+  
+
+.nosotros_title h3{
+    margin-bottom: 2rem;
+    font-size: 1.3em;
+}
+
+.nosotros_parrafo p{
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/*  CONTACTO  */
+
+.container_contact{
+    margin-top: 32rem;
+    height: 70vh;
+    /* margin-top: 1rem; */
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(../assets/Sala_de_espera.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: center;
+}
+
+.contact_title{
+    color: var(--secondary);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.contact_title h3{
+    margin-bottom: 2rem;
+}
+
+.btn_contact{
+    text-decoration: none;
+    color: var(--secondary);
+    background-color: var(--primaryDark);
+    padding: 25px 50px 25px 50px;
+}
+
+/* FOOTER */
+
+.container_footer{
+    height: 50vh;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primaryDark);
+    color: var(--secondary);
+    padding: 12rem;
+}
+
+.footer_logo img{
+    width: 10rem;
+    height: 10rem;
+}
+
+.footer_contact h6{
+    margin-bottom:1rem;
+    color: var(--terciary);
+    font-size: 22px;
+    margin-top: 1rem;
+}
+
+.footer_contact p{
+    margin-top: 1rem;
+    font-size: 17px;
+}
+
+/*DARK MODE*/
+
+.dark_mode{
+    background-color: var(--primaryDark);
+    color: var(--secondary);
 }
