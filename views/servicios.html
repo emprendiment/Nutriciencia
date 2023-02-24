@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/servicios.css">
+    <link rel="stylesheet" href="../css/serv_calculator.css">
     <link rel="icon" href="../public/img/Logo.jpeg">
     <title>Nutriciencia</title>
 </head>
@@ -22,9 +22,10 @@
         <nav class="nav activo" >
             <ul class="ul">
                 <li class="li"><a href="../index.html" class="a">Inicio</a></li>
-                <li class="li"><a href="" class="a">Sobre nosotros</a></li>
-                <li class="li"><a href="Turnos.html" class="a">Pedi un turno</a></li>
+                <li class="li"><a href="../index.html" class="a">Sobre nosotros</a></li>
+                <li class="li"><a href="turnos.html" class="a">Pedi un turno</a></li>
                 <li class="li"><a href="servicios.html" class="a">Servicios</a></li>
+                <li class="li"><a href="objetivos.html" class="a">Objetivos</a></li>
                 <li class="li"><a href="contacto.html" class="a">Contacto</a></li>
             </ul>
         </nav>
@@ -32,87 +33,24 @@
     <main>
       
         <section id="servicios" class="services">
-        
             <!--Seccion de servicios desde javascript-->
         </section>
-        <div class="aling">
-        <section class="calculator">
-            <h2><strong class="precio">Calculadora tu IMC</strong></h2>
-            <div>
-              <label>Peso (kg):</label>
-              <input class="input" type="number" id="weight" min="1" max="300" step="0.1">
-            </div>
-            <div>
-              <label>Altura (cm):</label>
-              <input class="input"type="number" id="height" min="50" max="300" step="0.1">
-            </div>
-            <div>
-              <label>Edad:</label>
-              <input class="input"type="number" id="age" min="1" max="120">
-            </div>
-            <div>
-              <label>Sexo:</label>
-              <select id="sex">
-                <option value="hombre">Hombre</option>
-                <option value="mujer">Mujer</option>
-              </select>
-            </div>
-            <button class="btn-content" onclick="calculateIMC()">Calcular IMC</button>
-            <div id="result"></div>
-            <p><strong class="precio">Busca el plan acorde a tus objetivos.</strong></p>
-    </section>
 </div>
-<div class="aling">
-  <section class="calculator">
-    <h2><strong class="precio">Calcula tus calorias</strong></h2>
-    <label for="weight">Peso (kg):</label>
-    <input type="number" id="peso" required>
-    <label for="height">Altura (cm):</label>
-    <input type="number" id="altura" required>
-    <label for="age">Edad:</label>
-    <input type="number" id="edad" required>
-    <label for="gender">Sexo:</label>
-    <select id="genero" required>
-      <option value="hombre">Hombre</option>
-      <option value="mujer">Mujer</option>
-    </select>
-    <label for="activity">Nivel de Actividad:</label>
-    <select id="activity" required>
-      <option value="1.2">Sedentario</option>
-      <option value="1.375">Ligeramente Activo</option>
-      <option value="1.55">Moderadamente Activo</option>
-      <option value="1.725">Muy Activo</option>
-      <option value="1.9">Extremadamente Activo</option>
-    </select>
-    <button class="btn-content" onclick="calcular()">Calcular Calorías</button>
-    <div class="resultado">
-      <p>Tu requerimiento diario de calorías es: <span id="calorias">0</span> kcal.</p>
-    </div>
-  </section>
-</div>
-<div class="aling">
-  <section class="calculator">
-    <h2><strong class="precio">Calcula tu % graso</strong></h2>
-    <label for="weight">Peso (kg):</label>
-    <input type="number" id="pesaje" required>
-    <label for="waist">Cintura (cm):</label>
-    <input type="number" id="cintura" required>
-    <label for="hip">Cadera (cm):</label>
-    <input type="number" id="cadera" required>
-    <label for="gender">Sexo:</label>
-    <select id="sex" required>
-      <option value="masculino">Hombre</option>
-      <option value="femenino">Mujer</option>
-    </select>
-    <button onclick="calculo()">Calcular Porcentaje de Grasa</button>
-    <div class="resultado">
-      <p>Tu porcentaje de grasa corporal es: <span id="porcentaje">0</span>%.</p>
-    </div>
-  </section>
-</div>
-    </main>
-
+</main>  
     <script src="../js/index.js"></script>
     <script src="../js/servicios.js"></script>
+    <!--Pie de pagina-->
+    <footer class="container_footer">
+      <div class="footer_logo">
+          <img src="../assets/Logo2.jpeg" alt="logo"/>
+      </div>
+      <div class="footer_contact">
+          <h6>Estamos en </h6>
+          <p>- San Martín 2281 Puntomed - Piso 6 - Consultorio 9 </p>
+          <h6>Escribirnos al</h6>
+          <p>- 3765113766</p>
+          <p>O a nutri.ciencia@hotmail.com</p>
+      </div>
+  </footer>
 </body>
 </html>

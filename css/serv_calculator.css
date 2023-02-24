@@ -6,7 +6,6 @@
     --dark:#000000;
 }
 
-
 .aling{
     display: flex;
     justify-content: center;
@@ -45,7 +44,7 @@
 .btn-content:hover{
     background: var(--secondary);
 }
-/*Calculadora de IMC*/
+/*ESTILOS DE LAS CALCULADORAS , HOJA OBJETIVOS.HTML*/
 .calculator{
     text-align: center;
     margin-top: 2rem;
@@ -61,13 +60,22 @@
     padding: 2rem;
 }
 .input{
-    border: none;
     text-align: center;
+    border: none;
     width: 200px;
     height: 20px;
     cursor: pointer;
 }
 
+.white_mode .art-content{
+    background: var(--secondary);
+}
+
+.alingNew{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
 
 @media screen and (max-width:480px) {
