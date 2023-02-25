@@ -77,3 +77,44 @@
           document.getElementById("porcentaje").innerHTML = porcentaje;
         
         }
+
+    //Calculadora de grasa
+    function calcular() {
+      const altura = document.getElementById("altura").value;
+      const abdomen = document.getElementById("abdomen").value;
+      const cuello = document.getElementById("cuello").value;
+      const sexo = document.getElementById("sexo").value;
+    
+      let cintura = 0;
+      let cadera = 0;
+      if (sexo === "Mujer") {
+        cintura = document.getElementById("cintura").value;
+        cadera = document.getElementById("cadera").value;
+      }
+    
+      const factorHombre = 495 / (1.0324 - 0.19077 * (Math.log10(abdomen - cuello)) + 0.15456 * (Math.log10(altura))) - 450;
+      const factorMujer = 495 / (0.29569 - 0.15845 * (Math.log10(cintura + cadera - cuello)) + 0.22100 * (Math.log10(altura))) - 450;
+    
+      let resultado = 0;
+      if (sexo === "Hombre") {
+        resultado = factorHombre;
+      } else if (sexo === "Mujer") {
+        resultado = factorMujer;
+      }
+    
+      document.getElementById("resultado").innerHTML = `Su porcentaje de grasa corporal es del ${resultado.toFixed(2)}%`;
+    }
+    
+    document.getElementById("sexo").addEventListener("change", function () {
+      const medidasMujer = document.getElementById("medidasMujer");
+      if (this.value === "Mujer") {
+        medidasMujer.style.display = "block";
+      } else {
+        medidasMujer.style.display = "none";
+      }
+    });
+    
+    document.getElementById("calcular").addEventListener("click", calcular);
+    
+
+      

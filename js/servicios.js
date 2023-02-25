@@ -5,28 +5,28 @@ const servicios = [
         id:01,
         Titulo:'Entrevista nutricional ,<br>antropometria y plan personalizado.',
         Descripcion:'Incluye antropometria para conocer el estado de grasa <br> y musculo una entrevista nutricional y <br>laconfeccion de un plan alimentario según objetivos.<br><strong class="precio">Presencial</strong>',
-        img:'../public/icons/plan1.png',
+        img:'../public/icons/logo1.PNG',
         precio: 7000
     },
     {
         id:02,
         Titulo:'Entrevista nutricional <br> y plan personalizado.',
         Descripcion:'Incluye entrevista nutricional y<br>confección del plan alimentario según objetivos.<br><strong class="precio">Presencial u online</strong>',
-        img:'../public/icons/plan2.png',
+        img:'../public/icons/logo2.PNG',
         precio: 5000
     },
     {
         id:03,
         Titulo:'Control Nutricional.',
         Descripcion:'Incluye control nutricional.<br><strong class="precio">Presencial y online</strong>',
-        img:'../public/icons/plan3.png',
+        img:'../public/icons/logo3.PNG',
         precio: 3500
     },
     {
         id:04,
         Titulo:'Antropometria.',
         Descripcion:'Incluye antropometria completa (perfiles ISAK 1 o 2) <br> con entrega y explicación de informe.<br><strong class="precio">Presencial</strong>',
-        img:'../public/icons/plan3.png',
+        img:'../public/icons/logo4.PNG',
         precio: 3000
     },
     

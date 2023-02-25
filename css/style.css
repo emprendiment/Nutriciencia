@@ -73,6 +73,41 @@
     height: 8rem;
 
 }
+
+.turnos{
+    text-align: center;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.turnos_container h2{
+    margin-top: 1rem;
+}
+.turnos_container{
+    border-radius: 1.5px;
+    width: 50%;
+    background: var(--primaryDark);
+}
+.clave{
+    color: var(--terciary);
+    font-style: italic;
+}
+.titulo_turnos{
+    color:var(--primary) ;
+    font-size: 2.5rem;
+}
+.p_turnos{
+    padding: 10px;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: var(--secondary);
+}
+.detalle{
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+
 @media screen and (max-width:480px) {
     .header .button{
         cursor: pointer;
@@ -109,6 +144,10 @@
     .img{
         height: 8rem;
         width: 8rem;
+    }
+
+    .turnos_container{
+        width: 100%;
     }
 }
 /* HERO */
@@ -278,4 +317,5 @@
     background-color: var(--primaryDark);
     color: var(--secondary);
 }
+/*SECCION DE TURNOS*/
 
