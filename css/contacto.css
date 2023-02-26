@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
 :root{
     --primary:#00AEB5;
     --primaryDark:#17232F;
@@ -13,20 +13,34 @@
     margin-top: 5rem;
 }
 .sect-contact{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    border: 1px solid white;
-    border-radius: 2px;
-
-    width: 70%;
-    padding: 15px;
-    background-color: var(--primaryDark);
-    color: var(--secondary);
-    line-height: 2.5rem;
-    font-size: 20px;
+    margin-top: 5rem;
+    text-align: center;
+    padding: 1rem;
 }
+
+.p-contact{
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.contact_img{
+
+}
+
+.sect-contact h2{
+    font-weight: 900;
+    /* color: var(--primaryDark); */
+    font-family: 'Tilt Warp', cursive;
+    font-size: 2rem;
+}
+
+.contact_imgArt{
+    /* display: flex; */
+    /* flex-wrap: wrap;
+    justify-content: space-between; */
+    padding: 1rem;
+}
+
 .strong{
     color:var(--primary) ;
     font-size: 3rem;
@@ -41,8 +55,8 @@
 }
 .img-contact{
     margin-top: 1rem;
-    width: 25px;
-    height: 25px;
+    width: 3rem;
+    height: 3rem;
 }
 
 @media screen and (max-width:480px) {
@@ -53,4 +67,9 @@
         width: 350px;
         height: 350px;
     }
+}
+
+.dark_mode{
+    background-color: var(--primaryDark);
+    color: var(--secondary);
 }

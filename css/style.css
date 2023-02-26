@@ -19,11 +19,15 @@
     --dark:#000000;
 }
 /*NAVEGACION*/
+
+.logo{
+    cursor: pointer;
+}
 .header{
     width: 100%;
     background-color: var(--primaryDark);
     padding: 0.5rem;
-
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -76,7 +80,12 @@
 
 .turnos{
     text-align: center;
-    margin-top: 5rem;
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../public/img/Consultorio.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 5rem;
+    height: 100%;
     display: flex;
     justify-content: center;
 }
@@ -86,7 +95,7 @@
 .turnos_container{
     border-radius: 1.5px;
     width: 50%;
-    background: var(--primaryDark);
+    /* background: var(--primaryDark); */
 }
 .clave{
     color: var(--terciary);
@@ -285,9 +294,11 @@
 
 .container_footer{
     height: 50vh;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
     margin-top: 10rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap ; */
     align-items: center;
     background-color: var(--primaryDark);
     color: var(--secondary);
@@ -311,11 +322,71 @@
     font-size: 17px;
 }
 
+/* CONTACTO */
+
+.map_contacto{
+    width: 100%;
+    
+}
+
 /*DARK MODE*/
 
 .dark_mode{
     background-color: var(--primaryDark);
     color: var(--secondary);
 }
-/*SECCION DE TURNOS*/
+/*MEDIAS QUERYS*/
 
+@media screen and (max-width:750px){
+        .container{
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: repeat(2,35rem);
+        }
+        
+        .nosotros_title h3{
+            font-size: 1rem;
+        }
+
+        .nosotros_parrafo p{
+            font-size: 1rem;
+        }
+
+        .p_turnos{
+            font-size: 15px;
+        }
+        .control{
+            width: 100%;
+        }
+}
+
+@media screen and (max-width:450px){
+    .container{
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2,26rem);
+    }
+    
+    .nosotros_title h2{
+        font-size: 15px;
+    }
+
+    .nosotros_parrafo p{
+        font-size: 10px;
+    }
+
+    .p_turnos{
+        font-size: 12px;
+    }
+
+    .footer_contact h6{
+        font-size: 12px;
+    }
+
+    .footer_contact p{
+        font-size: 12px;
+    }
+
+    .art-content{
+        width: 100%;
+    }
+
+}

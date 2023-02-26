@@ -42,13 +42,13 @@ const servicios = [
         <div class="art-content">
         <img class="img-content" src="${service.img}" alt="${service.img}"> 
         <h3><strong class="precio">${service.Titulo}</strong></h3>
-        <p>${service.Descripcion}</p>
-        <p><strong class="precio">$${service.precio}</strong></p>
+        <p class="servicios_parrafo">${service.Descripcion}</p>
+        <p class="precio_parrafo"><strong class="precio">$${service.precio}</strong></p>
         <a href="../views/Turnos.html"><button class="btn-content">Pedi un turno</button></a>
         </div>
         </div>
         `
-        document.body.appendChild(article)
+        section.appendChild(article)
     });
 
     
