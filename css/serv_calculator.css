@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
 :root{
     --primary:#00AEB5;
     --primaryDark:#17232F;
@@ -8,11 +9,9 @@
 
 /*ESTILOS SERVICIOS*/
 
-
 .services{
     /* height: 100px; */
     margin-top: 5rem;
-
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -41,9 +40,8 @@
 
 .precio_parrafo{
     color: var(--primary);
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-top: 1rem;
-
 
 }
 
@@ -130,6 +128,21 @@
     align-items: center;
     justify-content: space-evenly;
 }
+.title-servicios h2{
+    text-align: center;
+    font-weight: 900;
+    color: var(--primary); 
+    font-family: 'Tilt Warp', cursive;
+    font-size: 2rem;
+}
+.title-servicios p{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 25px;
+}
+.title-servicios {
+    margin-top: 40px;
+}
 
 
 @media screen and (max-width:480px) {
@@ -138,6 +151,19 @@
     }
     .calculator{
         width: 100%;
+    }
+    .precio_dos{
+        margin-top: 2rem;
+    }
+    
+    .parrafo_tres{
+        margin-top: 2rem;
+    }
+    .parrafo_cuatro{
+        margin-top: 2rem;
+    }
+    .services{
+        margin-top: 0;
     }
 }
 

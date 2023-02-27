@@ -98,14 +98,16 @@
     /* background: var(--primaryDark); */
 }
 .clave{
-    color: var(--terciary);
-    font-style: italic;
+    font-weight: bold;
+    text-shadow: 0px 5px 5px var(--dark);
 }
 .titulo_turnos{
     color:var(--primary) ;
     font-size: 2.5rem;
+    font-weight: bold;
 }
 .p_turnos{
+    font-weight: bold;
     padding: 10px;
     line-height: 2rem;
     font-size: 1.2rem;
@@ -115,6 +117,7 @@
     font-size: 1.5rem;
     color: var(--primary);
 }
+
 
 
 @media screen and (max-width:480px) {
@@ -128,7 +131,7 @@
         height: 0;
         pointer-events: none;
         overflow: hidden;
-        transition: all 1s ease;
+        transition: all 2s ease;
 
         display: flex;
         flex-flow: column nowrap;
@@ -138,8 +141,11 @@
     }
     /*Clase que se acciona cuando toco el boton*/
     .header .nav.activo{
-        height: 30rem;
+        height: 35rem;
         pointer-events: auto;
+    }
+    .header .nav.inactivo{
+        pointer-events: all;
     }
     .header .ul{
         flex-direction: column;
@@ -254,8 +260,8 @@
 .nosotros_parrafo p{
     font-size: 1.2rem;
     margin-top: 20px;
+    margin-right: 15px;
 }
-
 /*  CONTACTO  */
 
 .container_contact{
@@ -275,8 +281,9 @@
 
 .contact_title{
     color: var(--secondary);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: center;
+
 }
 
 .contact_title h3{
@@ -321,6 +328,9 @@
     margin-top: 1rem;
     font-size: 17px;
 }
+.num-footer{
+    color: var(--primary);
+}
 
 /* CONTACTO */
 
@@ -357,6 +367,7 @@
         .control{
             width: 100%;
         }
+        
 }
 
 @media screen and (max-width:450px){
@@ -367,14 +378,16 @@
     
     .nosotros_title h2{
         font-size: 15px;
+        text-align: center;
     }
 
     .nosotros_parrafo p{
         font-size: 10px;
+        text-align: center;
     }
 
     .p_turnos{
-        font-size: 12px;
+        font-size: 18px;
     }
 
     .footer_contact h6{
@@ -388,5 +401,26 @@
     .art-content{
         width: 100%;
     }
+    .container_contact{
+        margin-top: 5rem;
+    }
+    .container_nosotros{
+        margin-top: 5rem;
+    }
+    .nosotros_parrafo_segunda{
+        margin-left: 0;
+    }
+    .nosotros_parrafo_primera{
+        margin-left:0;
+    }
 
+}
+@media screen and (max-width:400px){
+    .container_contact{
+        margin-top: 10rem;
+    }
+    .container_nosotros{
+        margin-top: 5rem;
+    }
+    
 }

@@ -12,6 +12,13 @@ button.addEventListener('click',()=>{
     nav.classList.toggle('activo')
 });
 
+if(window.innerWidth < 480  ){
+    nav.classList.remove("activo") 
+}
+if(window.innerWidth < 400  ){
+    nav.classList.remove("activo") 
+}
+
 const btn_dark = document.getElementById('btn_dark');
 const main_all = document.querySelector('white_mode_all');
 

@@ -78,7 +78,7 @@
         
         }
 
-    //Calculadora de grasa
+    /*Calculadora de grasa
     function calcular() {
       const altura = document.getElementById("altura").value;
       const abdomen = document.getElementById("abdomen").value;
@@ -116,5 +116,5 @@
     
     document.getElementById("calcular").addEventListener("click", calcular);
     
-
+*/
       
