@@ -172,7 +172,7 @@
     background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url(../assets/prueba.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
@@ -430,7 +430,7 @@
         background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url(../assets/prueba.jpg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: 100% 100%;
         background-attachment: fixed;
         display: flex;
         justify-content: center;
