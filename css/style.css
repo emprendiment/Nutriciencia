@@ -427,7 +427,7 @@
 @media screen and (max-width:449px) {
     .container-hero{
         height: 80vh;
-        background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url(../assets/IMG_6252.PNG);
+        background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url(../assets/prueba.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
