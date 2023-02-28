@@ -441,14 +441,14 @@
     }
 
     .container_contact{
-        margin-top: 10rem;
+        margin-top: 5rem;
     }
     .container_nosotros{
         margin-top: 5rem;
     }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1000px) {
     .header .button{
         cursor: pointer;
         display: block;
