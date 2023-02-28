@@ -265,7 +265,7 @@
 /*  CONTACTO  */
 
 .container_contact{
-    margin-top: 30rem;
+    margin-top: 35rem;
     height: 70vh;
     /* margin-top: 1rem; */
     background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(../assets/Sala_de_espera.jpg);
@@ -491,7 +491,6 @@
         width: 100%;
     }
     
-    
 }
 @media screen and (max-width:360px) {
     .container-hero{
@@ -512,9 +511,7 @@
     
 }
 @media screen and (max-width:600px) {
-    .container_contact{
-        margin-top: 18rem;
-    }
+    
     .container_nosotros{
         margin-top: 5rem;
     }
