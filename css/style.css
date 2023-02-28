@@ -417,10 +417,24 @@
 }
 @media screen and (max-width:400px){
     .container_contact{
-        margin-top: 10rem;
+        margin-top: 12rem;
     }
     .container_nosotros{
-        margin-top: 5rem;
+        margin-top: 6rem;
     }
     
+}
+@media screen and (max-width:449px) {
+    .container-hero{
+        height: 80vh;
+        background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url(../assets/IMG_6252.PNG);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        color: var(--secondary);
+        align-items: center;
+    }
 }
