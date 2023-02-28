@@ -173,7 +173,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     display: flex;
     justify-content: center;
     color: var(--secondary);
@@ -426,12 +426,12 @@
 }
 @media screen and (max-width:449px) {
     .container-hero{
-        height: 80vh;
+        height: 70vh;
         background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url(../assets/IMG_6252.PNG);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% 100%;
-        background-attachment: fixed;
+        /*background-attachment: fixed;*/
         display: flex;
         justify-content: center;
         color: var(--secondary);
