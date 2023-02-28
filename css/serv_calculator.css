@@ -17,7 +17,6 @@
     flex-wrap: wrap;
 }
 
-
 .aling{
     display: flex;
     justify-content: center;
@@ -46,14 +45,14 @@
 }
 
 .precio_dos{
-    margin-top: 5.5rem;
+    margin-top: 4.5rem;
 }
 
 .parrafo_tres{
-    margin-top: 9rem;
+    margin-top: 5.5rem;
 }
 .parrafo_cuatro{
-    margin-top: 6rem;
+    margin-top: 6.1rem;
 }
 .img-content{
     border-radius: 50%;
@@ -153,17 +152,23 @@
         width: 100%;
     }
     .precio_dos{
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
     
     .parrafo_tres{
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
     .parrafo_cuatro{
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
     .services{
         margin-top: 0;
+    }
+    .btn-content{
+        margin-top: 1.5px;
+    }
+    .art-content{
+        gap: 15px;
     }
 }
 
