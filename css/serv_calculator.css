@@ -192,7 +192,7 @@
     color: var(--dark);
  }
  .input{
-    text-align-last:center ;
+    text-indent:0;
     text-align: center;
     border: none;
     width: 20rem;   
