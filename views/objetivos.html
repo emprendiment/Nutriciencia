@@ -35,6 +35,7 @@
     <main> 
         <div class="title-servicios">
           <h2>Calculadoras</h2>
+          <p>Los valores son referencias.<br>Cualquier duda consultar con el profesional.</p>
         </div>
         <section class="seccion">
             <!--Seccion de servicios desde javascript-->
@@ -96,35 +97,41 @@
 </section>
 <div class="alingNew">
   <section class="calculator" >
-		<label for="altura">Altura (cm)</label>
-		<input type="number" id="altura" name="altura" required>
-
-		<label for="abdomen">Circunferencia de abdomen (cm)</label>
-		<input type="number" id="abdomen" name="abdomen" required>
-
-		<label for="cuello">Circunferencia de cuello (cm)</label>
-		<input type="number" id="cuello" name="cuello" required>
-
-		<label for="sexo">Sexo</label>
-		<select id="sexo" name="sexo" required>
-			<option value="">Seleccione su sexo</option>
-			<option value="Hombre">Hombre</option>
-			<option value="Mujer">Mujer</option>
-		</select>
-
-		<div id="medidasMujer" style="display:none">
-			<label for="cintura">Circunferencia de cintura (cm)</label>
-			<input type="number" id="cintura" name="cintura">
-
-			<label for="cadera">Circunferencia de cadera (cm)</label>
-			<input type="number" id="cadera" name="cadera">
-		</div>
-
-		<button type="button" class="btn-content" id="calcular" calcular()>Calcular</button>
-
-		<p id="resultado"></p>            
+    <div id="mujer" class="mujer">
+      <h2><strong class="precio">Calcula tu % graso <br> Mujeres </strong></h2>
+      <label for="cintura">Cintura (en cm): </label>
+      <input class="input" type="number" id="cintura"><br>
+      <label for="cadera">Cadera (en cm): </label>
+      <input class="input" type="number" id="cadera"><br>
+      <label for="cuello">Cuello (en cm): </label>
+      <input class="input" type="number" id="cuello"><br>
+      <label for="talla">Talla (en cm): </label>
+      <input class="input" type="number" id="talla"><br>
+      <button class="btn-content" onclick="calcularPorcentajeMujer()">Calcular</button>
+      <p class="precio" id="resultadoMujer">Aqui veras el resultado</p>
+    </div>
   </section>
-</div>
+  </div>
+    <!-- Para hombres -->
+    <div class="alingNew">
+      <section class="calculator">
+    <div id="hombre" class="hombre">
+      <h2><strong class="precio">Calcula tu % gaso <br> Hombres </strong></h2>
+      <label for="abdomen">Abdomen (cm):</label>
+      <input class="input" type="number" id="abdomenHombre" name="abdomen"><br>
+      <label for="cuello">Cuello (cm):</label>
+      <input  class="input" type="number" id="cuelloHombre" name="cuello"><br>
+      <label for="altura">Altura (cm):</label>
+      <input class="input" type="number" id="alturaHombre" name="altura"><br>
+      <button class="btn-content" type="button" onclick="calcularPorcentajeHombre()">Calcular</button>
+      <p class="precio" id="resultadoHombre">Aqui veras el resultado</p>
+    </section>
+    </div>   
+  </div>
+  <div class="title-servicios">
+    <h2>Calculadoras</h2>
+    <p>Los valores son referencias.<br>Cualquier duda consultar con el profesional.</p>
+  </div>
 </main>  
     <script src="../js/index.js"></script>
     <script src="../js/calculator.js"></script>

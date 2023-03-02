@@ -29,6 +29,7 @@
     color: var(--secondary);
     text-align: center;
     height: 35rem;
+    gap: 5px;
     border-radius: 10px;
     box-shadow: 0 0 12px rgba(0, 0, 0, .5);
     display: flex;
@@ -43,7 +44,9 @@
     margin-top: 1rem;
 
 }
-
+.color-servicio{
+    color: var(--terciary);
+}
 .precio_dos{
     margin-top: 4.5rem;
 }
@@ -52,14 +55,14 @@
     margin-top: 5.5rem;
 }
 .parrafo_cuatro{
-    margin-top: 6.1rem;
+    margin-top: 6.2rem;
 }
 .img-content{
     border-radius: 50%;
     width: 200PX;
 }
 .btn-content{
-    background: var(--terciary);
+    background: var(--secondary);
     font-size: 1rem;
     cursor: pointer;
     border: none;
@@ -70,7 +73,9 @@
     /* display:absolute; */
     position: relative;
 }
-
+.btn-content:hover{
+    opacity: 0.8;
+}
 .btn_entrevitas{
     margin-top: 1.4rem;
 }
@@ -127,6 +132,7 @@
     align-items: center;
     justify-content: space-evenly;
 }
+
 .title-servicios h2{
     text-align: center;
     font-weight: 900;
@@ -142,7 +148,19 @@
 .title-servicios {
     margin-top: 40px;
 }
-
+.mujer,
+.hombre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.mujer p , .hombre p{
+    margin-top: 30px;
+}
+.mujer h2 , .hombre h2{
+    margin-bottom: 10px;
+}
 
 @media screen and (max-width:480px) {
     .art-content{
