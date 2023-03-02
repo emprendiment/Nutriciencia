@@ -544,4 +544,18 @@
     .num-footer{
         color: var(--primary);
     }
+    .header .svg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        fill: black;
+    }
+    .container_nosotros{
+        margin-top: 20rem;
+    }
+    .container_contact{
+        margin-top: 20rem;
+    }
 }
