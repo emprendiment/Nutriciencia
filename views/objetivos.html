@@ -54,13 +54,11 @@
               <label>Edad:</label>
               <input class="input"type="number" id="age" min="1" max="120">
             </div>
-            <div>
               <label>Sexo:</label>
-              <select id="sex">
+              <select class="input" id="sex">
                 <option value="hombre">Hombre</option>
                 <option value="mujer">Mujer</option>
               </select>
-            </div>
             <button class="btn-content " onclick="calculateIMC()">Calcular IMC</button>
             <div class="precio" id="result" ></div>
             <p><strong class="precio">Busca el plan acorde a tus objetivos.</strong></p>
@@ -76,12 +74,12 @@
     <label for="age">Edad:</label>
     <input  class="input"type="number" id="edad" required>
     <label for="gender">Sexo:</label>
-    <select id="genero" required>
+    <select class="input" id="genero" required>
       <option value="hombre">Hombre</option>
       <option value="mujer">Mujer</option>
     </select>
     <label for="activity">Nivel de Actividad:</label>
-    <select id="activity" required>
+    <select class="input" id="activity" required>
       <option value="1.2">Sedentario</option>
       <option value="1.375">Ligeramente Activo</option>
       <option value="1.55">Moderadamente Activo</option>

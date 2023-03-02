@@ -87,9 +87,7 @@
 .btn_antro{
     margin-top: 1rem;
 }
-.btn-content:hover{
-    background: var(--secondary);
-}
+
 /*ESTILOS DE LAS CALCULADORAS , HOJA OBJETIVOS.HTML*/
 .calculator{
     text-align: center;
@@ -189,7 +187,11 @@
         gap: 15px;
     }
 }
-
+@media screen and (max-width:390px){
+ .btn-content{
+    color: var(--dark);
+ }
+}
 
 @media screen and (max-width:450px){
     .control{
