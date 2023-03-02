@@ -192,8 +192,6 @@
     color: var(--dark);
  }
  .input{
-    display: inline-block;
-    text-align: center;
     border: none;
     width: 20rem;   
     margin-top: 1rem;
