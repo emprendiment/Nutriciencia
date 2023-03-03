@@ -195,7 +195,7 @@
 
 .container_nosotros{
     height: 100vh;
-    margin-top: 15rem;
+    margin-top: 10rem;
 }
 
 .container {  
@@ -516,7 +516,7 @@
 @media screen and (max-width:600px) {
     
     .container_nosotros{
-        margin-top: 5rem;
+        margin-top: 1rem;
     }
     .container_contact{
         height: 60vh;
@@ -534,7 +534,7 @@
 }
 @media screen and (max-width:490px) {
     .container_nosotros{
-        margin-top: 20rem;
+        margin-top: 10rem;
     }
     .container_contact{
         margin-top: 20rem;
@@ -553,7 +553,7 @@
         fill: black;
     }
     .container_nosotros{
-        margin-top: 15rem;
+        margin-top: 2rem;
     }
     .container_contact{
         margin-top: 20rem;
