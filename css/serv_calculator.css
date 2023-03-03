@@ -159,6 +159,11 @@
 .mujer h2 , .hombre h2{
     margin-bottom: 10px;
 }
+.colum{
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+}
 
 @media screen and (max-width:480px) {
     .art-content{
