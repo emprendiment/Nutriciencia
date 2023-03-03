@@ -91,6 +91,7 @@
     height: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 10rem;
 }
 .turnos_container h2{
     margin-top: 1rem;
@@ -563,9 +564,3 @@
     }
 }
 
-.calendario{
-    margin-top: 10rem;
-}
-.calendly-inline-widget{
-    height: 390px;
-}
