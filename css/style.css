@@ -509,7 +509,10 @@
         align-items: center;
     }
     .container_nosotros{
-        margin-bottom: 8rem;
+        margin-bottom: 10rem;
+    }
+    .container_contact{
+        margin-top: 10rem;
     }
     
 }
@@ -558,4 +561,11 @@
     .container_contact{
         margin-top: 5rem;
     }
+}
+
+.calendario{
+    margin-top: 10rem;
+}
+.calendly-inline-widget{
+    height: 390px;
 }
