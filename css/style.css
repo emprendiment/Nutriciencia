@@ -91,7 +91,7 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 .turnos_container h2{
     margin-top: 1rem;
@@ -372,6 +372,12 @@
             width: 100%;
         }
         
+        .container_nosotros{
+            margin-top: 8rem;
+        }
+        .container_contact{
+            margin-top: 8rem;
+        }
 }
 
 @media screen and (max-width:450px){
@@ -405,11 +411,11 @@
     .art-content{
         width: 100%;
     }
-    .container_contact{
-        margin-top: 5rem;
-    }
     .container_nosotros{
-        margin-top: 5rem;
+        margin-top: 8rem;
+    }
+    .container_contact{
+        margin-top: 8rem;
     }
     .nosotros_parrafo_segunda{
         margin-left: 0;
@@ -420,11 +426,11 @@
 
 }
 @media screen and (max-width:400px){
-    .container_contact{
-        margin-top: 10rem;
-    }
     .container_nosotros{
-        margin-top: 5rem;
+        margin-top: 8rem;
+    }
+    .container_contact{
+        margin-top: 8rem;
     }
     
 }
@@ -444,10 +450,10 @@
         align-items: center;
     }
     .container_nosotros{
-        margin-top: 5rem;
+        margin-top: 8rem;
     }
     .container_contact{
-        margin-top: 5rem;
+        margin-top: 8rem;
     }
 
 }
@@ -494,6 +500,12 @@
     .turnos_container{
         width: 100%;
     }
+    .container_nosotros{
+        margin-top: 8rem;
+    }
+    .container_contact{
+        margin-top: 8rem;
+    }
     
 }
 @media screen and (max-width:360px) {
@@ -509,11 +521,11 @@
         color: var(--secondary);
         align-items: center;
     }
-    .container_nosotros{
-        margin-bottom: 10rem;
+   .container_nosotros{
+        margin-top: 8rem;
     }
     .container_contact{
-        margin-top: 10rem;
+        margin-top: 8rem;
     }
     
 }
@@ -535,13 +547,20 @@
         justify-content: center;
         flex-direction: center;
     }
+    .container_nosotros{
+        margin-top: 8rem;
+    }
+    .container_contact{
+        margin-top: 8rem;
+    }
+    
 }
 @media screen and (max-width:490px) {
     .container_nosotros{
-        margin-top: 5rem;
+        margin-top: 8rem;
     }
     .container_contact{
-        margin-top: 5rem;
+        margin-top: 4rem;
     }
 }
 @media screen and (max-width:390px) {
@@ -557,10 +576,29 @@
         fill: black;
     }
     .container_nosotros{
+        margin-top: 8rem;
+    }
+    .container_contact{
+        margin-top: 8rem;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .container_nosotros{
+        margin-top: 8rem;
+    }
+    .container_contact{
+        margin-top: 8rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .container_nosotros{
         margin-top: 5rem;
     }
     .container_contact{
-        margin-top: 5rem;
+        margin-top: 15rem;
     }
 }
+
 
