@@ -63,34 +63,22 @@
 
      
 
-// Función para calcular el porcentaje de grasa corporal en mujeres
-function calcularPorcentajeMujer() {
-  // Obtener los valores de los inputs
-  const cintura = parseFloat(document.getElementById("cintura").value);
-  const cadera = parseFloat(document.getElementById("cadera").value);
-  const cuello = parseFloat(document.getElementById("cuello").value);
-  const talla = parseFloat(document.getElementById("talla").value);
+// Porcentaje de grasa corporal
 
-  // Calcular el porcentaje de grasa corporal en mujeres
-  const porcentaje = 163.205 * Math.log10( cintura + cadera - cuello ) - 97.684 * Math.log10(talla) - 78.387;
+function calcularGrasa() {
 
-  // Mostrar el resultado en el HTML
-  document.getElementById("resultadoMujer").innerHTML = `Tu porcentaje de grasa corporal es ${porcentaje.toFixed(1)}%`;
-}
-
-// Función para calcular el porcentaje de grasa corporal en hombres
-function calcularPorcentajeHombre() {
-  var cuelloHombre = document.getElementById("cuelloHombre").value;
-  var abdomenHombre = document.getElementById("abdomenHombre").value;
-  var alturaHombre = document.getElementById("alturaHombre").value;
-  
-  // Calcular el porcentaje de grasa corporal si los valores ingresados son válidos
-  if (cuelloHombre > 0 && abdomenHombre > 0 && alturaHombre > 0) {
-    var porcentajeHombre = 86.01 * Math.log10(abdomenHombre - cuelloHombre) - 70.041 * Math.log10(alturaHombre) + 36.76;
-    document.getElementById("resultadoHombre").innerHTML = "El porcentaje de grasa corporal es: " + porcentajeHombre.toFixed(2) + "%";
-  } else {
-    document.getElementById("resultadoHombre").innerHTML = "Ingrese valores válidos para todos los campos";
+  var genValor = document.getElementById('generos').value;
+  var pesaje = parseFloat(document.getElementById('pesos').value);
+  var alto = parseFloat(document.getElementById('alturas').value);
+  var edades = parseFloat(document.getElementById('edades').value);
+  var porcentajeGrasa = 0;
+  if (genValor === 'female') {
+    porcentajeGrasa = (1.39 * pesaje / alto / alto ) + (0.16 * edades ) - (10.34 * 0) - 9; 
+    console.log(porcentajeGrasa)
+  } else if (genValor === 'male') {
+    porcentajeGrasa = (1.39 * 89.3 / alto / alto ) + (0.16 * edades ) - (10.34 * 1 ) - 9;
   }
+  document.getElementById('resultados').innerHTML = 'El porcentaje de grasa corporal es: ' + porcentajeGrasa.toFixed(1) + '%';
 }
 
 

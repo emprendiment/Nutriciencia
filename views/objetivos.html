@@ -95,36 +95,21 @@
 </section>
 <div class="alingNew">
   <section class="calculator" >
-    <div id="mujer" class="mujer">
-      <h2><strong class="precio">Calcula tu % graso <br> Mujeres </strong></h2>
-      <label for="cintura">Cintura (en cm): </label>
-      <input class="input" type="number" id="cintura"><br>
-      <label for="cadera">Cadera (en cm): </label>
-      <input class="input" type="number" id="cadera"><br>
-      <label for="cuello">Cuello (en cm): </label>
-      <input class="input" type="number" id="cuello"><br>
-      <label for="talla">Talla (en cm): </label>
-      <input class="input" type="number" id="talla"><br>
-      <button class="btn-content" onclick="calcularPorcentajeMujer()">Calcular</button>
-      <p class="precio" id="resultadoMujer">Aqui veras el resultado</p>
-    </div>
+    <h2><strong.precio>Calculadora de porcentaje de grasa corporal</strong></h2>
+      <label for="gender">Género:</label>
+      <select class="input" id="generos" name="gender">
+        <option value="female">Mujer</option>
+        <option value="male">Hombre</option>
+      </select><br><br>
+      <label for="peso">Peso (kg):</label>
+      <input  class="input" type="number" id="pesos" name="peso" step="0.01"><br><br>
+      <label for="altura">Altura (m):</label>
+      <input  class="input"type="number" id="alturas" name="altura" step="0.01"><br><br>
+      <label for="edad">Edad:</label>
+      <input  class="input"type="number" id="edades" name="edad"><br><br>
+      <input class="input" type="button" value="Calcular" onclick="calcularGrasa()">
+    <p id="resultados">Tu porcentaje de grasa corporal es..</p>
   </section>
-  </div>
-    <!-- Para hombres -->
-    <div class="alingNew">
-      <section class="calculator">
-    <div id="hombre" class="hombre">
-      <h2><strong class="precio">Calcula tu % gaso <br> Hombres </strong></h2>
-      <label for="abdomen">Abdomen (cm):</label>
-      <input class="input" type="number" id="abdomenHombre" name="abdomen"><br>
-      <label for="cuello">Cuello (cm):</label>
-      <input  class="input" type="number" id="cuelloHombre" name="cuello"><br>
-      <label for="altura">Altura (cm):</label>
-      <input class="input" type="number" id="alturaHombre" name="altura"><br>
-      <button class="btn-content" type="button" onclick="calcularPorcentajeHombre()">Calcular</button>
-      <p class="precio" id="resultadoHombre">Aqui veras el resultado</p>
-    </section>
-    </div>   
   </div>
   <div class="title-servicios">
     <h2>Calculadoras</h2>
