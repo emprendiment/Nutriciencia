@@ -1,7 +1,8 @@
 //Calculadora de IMC
         // función que realiza los calculos
-        function calculateIMC() {
+        function calcularIMC () {
             const weight = document.getElementById("weight").value;
+            console.log(weight)
             const height = document.getElementById("height").value / 100;
             const age = document.getElementById("age").value;
             const sex = document.getElementById("sex").value;
@@ -35,7 +36,7 @@
                   category = "Obesidad extrema";
                 }
               }
-              const resultElement = document.getElementById("result")
+              const resultElement = document.getElementById("resultado")
             resultElement.innerHTML=`Tu imc es ${imc.toFixed(2)}`  
             }
         }
@@ -72,11 +73,11 @@ function calcularGrasa() {
   var alto = parseFloat(document.getElementById('alturas').value);
   var edades = parseFloat(document.getElementById('edades').value);
   var porcentajeGrasa = 0;
-  if (genValor === 'female') {
-    porcentajeGrasa = (1.39 * pesaje / alto / alto ) + (0.16 * edades ) - (10.34 * 0) - 9; 
+  if (genValor == 'femenino') {
+    porcentajeGrasa = (1.39 * pesaje / alto / alto ) + (0.16 * edades )-(10.34 * 0)-9; 
     console.log(porcentajeGrasa)
-  } else if (genValor === 'male') {
-    porcentajeGrasa = (1.39 * 89.3 / alto / alto ) + (0.16 * edades ) - (10.34 * 1 ) - 9;
+  } else if (genValor == 'masculino') {
+    porcentajeGrasa = (1.39 * 89.3 / alto / alto ) + (0.16 * edades )-(10.34 * 1 ) - 9;
   }
   document.getElementById('resultados').innerHTML = 'El porcentaje de grasa corporal es: ' + porcentajeGrasa.toFixed(1) + '%';
 }

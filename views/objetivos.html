@@ -35,7 +35,7 @@
     <main> 
         <div class="title-servicios">
           <h2>Calculadoras</h2>
-          <p>Los valores de % graso son referencias.<br>Para mayor precisión recomendamos una antropometría hecha por un profesional</p>
+          <p>Los valores de % graso son referencias.<br>Para mayor precisión recomendamos una antropometría hecha por un profesional.</p>
         </div>
         <section class="seccion">
             <!--Seccion de servicios desde javascript-->
@@ -44,23 +44,23 @@
             <h2><strong class="precio">Calculadora tu IMC</strong></h2>
             <div>
               <label>Peso (kg):</label>
-              <input class="input" type="number" id="weight" min="1" max="300" step="0.1">
+              <input class="input" type="number" id="weight" min="1" max="300" step="0.1" placeholder="66">
             </div>
             <div>
               <label>Altura (cm):</label>
-              <input class="input"type="number" id="height" min="50" max="300" step="0.1">
+              <input class="input"type="number" id="height" min="50" max="300" step="0.1" placeholder="Ejemplo  169 sin .">
             </div>
             <div>
               <label>Edad:</label>
-              <input class="input"type="number" id="age" min="1" max="120">
+              <input class="input"type="number" id="age" min="1" max="120" placeholder="Ejemplo  20">
             </div>
               <label>Sexo:</label>
-              <select class="input">
+              <select id='sex' class="input">
                 <option value="hombre">Hombre</option>
                 <option value="mujer">Mujer</option>
             </select>
-            <button class="btn-content " onclick="calculateIMC()">Calcular IMC</button>
-            <div class="precio" id="result" ></div>
+            <button class="btn-content " onclick="calcularIMC()">Calcular IMC</button>
+            <div class="precio" id="resultado" ></div>
             <p><strong class="precio">Busca el plan acorde a tus objetivos.</strong></p>
     </section>
 </div>
@@ -68,11 +68,11 @@
   <section class="calculator">
     <h2><strong class="precio">Calcula tus calorias</strong></h2>
     <label for="weight">Peso (kg):</label>
-    <input  class="input" type="number" id="peso" required>
+    <input  class="input" type="number" id="peso" required placeholder="66">
     <label for="height">Altura (cm):</label>
-    <input  class="input"type="number" id="altura" required>
+    <input  class="input"type="number" id="altura" required placeholder="Ejemplo 169 sin .">
     <label for="age">Edad:</label>
-    <input  class="input"type="number" id="edad" required>
+    <input  class="input"type="number" id="edad" required placeholder="20">
     <label for="gender">Sexo:</label>
     <select class="input" id="genero" required>
       <option value="hombre">Hombre</option>
@@ -98,22 +98,22 @@
     <h2><strong.precio>Calculadora de porcentaje de grasa corporal</strong></h2>
       <label for="gender">Sexo:</label>
       <select class="input" id="generos" name="gender">
-        <option value="female">Mujer</option>
-        <option value="male">Hombre</option>
+        <option value="femenino">Mujer</option>
+        <option value="masculino">Hombre</option>
       </select><br><br>
       <label for="peso">Peso (kg):</label>
-      <input  class="input" type="number" id="pesos" name="peso" step="0.01"><br><br>
+      <input  class="input" type="number" id="pesos" name="peso" step="0.1" placeholder="Ejemplo  61.1kg"><br><br>
       <label for="altura">Altura (m):</label>
-      <input  class="input"type="number" id="alturas" name="altura" step="0.01"><br><br>
+      <input  class="input"type="number" id="alturas" name="altura" step="0.1" placeholder="Ejemplo  1.63m con ."><br><br>
       <label for="edad">Edad:</label>
-      <input  class="input"type="number" id="edades" name="edad"><br><br>
+      <input  class="input"type="number" id="edades" name="edad"  placeholder="Ejemplo  47 años"><br><br>
       <button class="btn-content" onclick="calcularGrasa()">Calcular % graso</button>
     <p id="resultados">Tu porcentaje de grasa corporal es..</p>
   </section>
   </div>
   <div class="title-servicios">
     <h2>Calculadoras</h2>
-    <p>Los valores de % graso son referencias.<br>Para mayor precisión recomendamos una antropometría hecha por un profesional</p>
+    <p>Los valores de % graso son referencias.<br>Para mayor precisión recomendamos una antropometría hecha por un profesional.</p>
   </div>
 </main>  
 
@@ -129,7 +129,9 @@
           <p>- San Martín 2281 Puntomed - Piso 6 - Consultorio 9 </p>
           <h6>Escribirnos al</h6>
           <p class="num-footer">-3765113766</p>
-          <p>O a nutri.ciencia@hotmail.com</p>
+          <h6>Nuestro correo</h6>
+          <p>- nutri.ciencia@hotmail.com</p>
+          <p>©Nutriciencia 2023</p>
       </div>
   </footer>
 </body>
