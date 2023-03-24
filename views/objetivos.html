@@ -24,7 +24,7 @@
         <nav class="nav activo" >
             <ul class="ul">
                 <li class="li"><a href="../index.html" class="a">Sobre nosotros</a></li>
-                <li class="li"><a href="turnos.html" class="a">Pedi un turno</a></li>
+                <li class="li"><a href="turnos.html" class="a">Pedí un turno</a></li>
                 <li class="li"><a href="servicios.html" class="a">Servicios</a></li>
                 <li class="li"><a href="#" class="a">Objetivos</a></li>
                 <li class="li"><a href="contacto.html" class="a">Contacto</a></li>
@@ -41,18 +41,18 @@
             <!--Seccion de servicios desde javascript-->
         <div class="alingNew">
         <section class="calculator">
-            <h2><strong class="precio">Calculadora tu IMC</strong></h2>
+            <h2><strong class="precio">Calculadora de IMC.</strong></h2>
             <div>
               <label>Peso (kg):</label>
-              <input class="input" type="number" id="weight" min="1" max="300" step="0.1" placeholder="66">
+              <input class="input" type="number" id="weight" min="1" max="300" step="0.1" placeholder="Ejemplo 66">
             </div>
             <div>
               <label>Altura (cm):</label>
-              <input class="input"type="number" id="height" min="50" max="300" step="0.1" placeholder="Ejemplo  169 sin .">
+              <input class="input"type="number" id="height" min="50" max="300" step="0.1" placeholder="Ejemplo 169 sin .">
             </div>
             <div>
               <label>Edad:</label>
-              <input class="input"type="number" id="age" min="1" max="120" placeholder="Ejemplo  20">
+              <input class="input"type="number" id="age" min="1" max="120" placeholder="Ejemplo 20">
             </div>
               <label>Sexo:</label>
               <select id='sex' class="input">
@@ -60,19 +60,19 @@
                 <option value="mujer">Mujer</option>
             </select>
             <button class="btn-content " onclick="calcularIMC()">Calcular IMC</button>
-            <div class="precio" id="resultado" ></div>
-            <p><strong class="precio">Busca el plan acorde a tus objetivos.</strong></p>
+            <div class="precio" id="resultado" >Tu IMC es:</div>
+            
     </section>
 </div>
 <div class="alingNew">
   <section class="calculator">
-    <h2><strong class="precio">Calcula tus calorias</strong></h2>
+    <h2><strong class="precio">Calculadora de calorias.</strong></h2>
     <label for="weight">Peso (kg):</label>
-    <input  class="input" type="number" id="peso" required placeholder="66">
+    <input  class="input" type="number" id="peso" required placeholder="Ejemplo 66">
     <label for="height">Altura (cm):</label>
     <input  class="input"type="number" id="altura" required placeholder="Ejemplo 169 sin .">
     <label for="age">Edad:</label>
-    <input  class="input"type="number" id="edad" required placeholder="20">
+    <input  class="input"type="number" id="edad" required placeholder="Ejemplo 20">
     <label for="gender">Sexo:</label>
     <select class="input" id="genero" required>
       <option value="hombre">Hombre</option>
@@ -95,20 +95,20 @@
 </section>
 <div class="alingNew">
   <section class="calculator" >
-    <h2><strong.precio>Calculadora de porcentaje de grasa corporal</strong></h2>
+    <h2><strong.precio>Calculadora de porcentaje de grasa corporal.</strong></h2>
       <label for="gender">Sexo:</label>
       <select class="input" id="generos" name="gender">
         <option value="femenino">Mujer</option>
         <option value="masculino">Hombre</option>
       </select><br><br>
       <label for="peso">Peso (kg):</label>
-      <input  class="input" type="number" id="pesos" name="peso" step="0.1" placeholder="Ejemplo  61.1kg"><br><br>
+      <input  class="input" type="number" id="pesos" name="peso" step="0.1" placeholder="Ejemplo  61.1"><br><br>
       <label for="altura">Altura (m):</label>
-      <input  class="input"type="number" id="alturas" name="altura" step="0.1" placeholder="Ejemplo  1.63m con ."><br><br>
+      <input  class="input"type="number" id="alturas" name="altura" step="0.1" placeholder="Ejemplo  1.63 con ."><br><br>
       <label for="edad">Edad:</label>
-      <input  class="input"type="number" id="edades" name="edad"  placeholder="Ejemplo  47 años"><br><br>
+      <input  class="input"type="number" id="edades" name="edad"  placeholder="Ejemplo 47 "><br><br>
       <button class="btn-content" onclick="calcularGrasa()">Calcular % graso</button>
-    <p id="resultados">Tu porcentaje de grasa corporal es..</p>
+    <p id="resultados">Tu porcentaje de grasa corporal es:</p>
   </section>
   </div>
   <div class="title-servicios">
@@ -131,7 +131,7 @@
           <p class="num-footer">-3765113766</p>
           <h6>Nuestro correo</h6>
           <p>- nutri.ciencia@hotmail.com</p>
-          <p>©Nutriciencia 2023</p>
+          
       </div>
   </footer>
 </body>

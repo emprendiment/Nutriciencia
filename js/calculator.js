@@ -37,7 +37,7 @@
                 }
               }
               const resultElement = document.getElementById("resultado")
-            resultElement.innerHTML=`Tu imc es ${imc.toFixed(2)}`  
+            resultElement.innerHTML=`Tu IMC es ${imc.toFixed(2)}`  
             }
         }
         
