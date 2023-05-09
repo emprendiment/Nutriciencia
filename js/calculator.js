@@ -1,7 +1,6 @@
 //Calculadora de IMC
         // función que realiza los calculos
-        function calcularIMC (e) {
-            e.preventDefault()
+        function calcularIMC () {
             const weight = document.getElementById("weight").value;
             console.log(weight)
             const height = document.getElementById("height").value / 100;

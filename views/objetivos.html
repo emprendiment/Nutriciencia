@@ -48,7 +48,7 @@
             </div>
             <div>
               <label>Altura (cm):</label>
-              <input class="input"type="number" id="height" min="50" max="300" step="0.1" placeholder="Ejemplo 169 sin .">
+              <input  class="input"type="number" id="height" min="50" max="300" step="0.1" placeholder="Ejemplo 169 sin .">
             </div>
             <div>
               <label>Edad:</label>
@@ -59,7 +59,7 @@
                 <option value="hombre">Hombre</option>
                 <option value="mujer">Mujer</option>
             </select>
-            <button type="button" class="btn-content " onclick="calcularIMC()">Calcular IMC</button>
+            <button class="btn-content " onclick="calcularIMC()">Calcular IMC</button>
             <div class="precio" id="resultado" >Tu IMC es:</div>
             
     </section>
@@ -68,18 +68,18 @@
   <section class="calculator">
     <h2><strong class="precio">Calculadora de calorias.</strong></h2>
     <label for="weight">Peso (kg):</label>
-    <input  class="input" type="number" id="peso" required placeholder="Ejemplo 66">
+    <input  class="input" type="number" id="peso"  placeholder="Ejemplo 66">
     <label for="height">Altura (cm):</label>
-    <input  class="input"type="number" id="altura" required placeholder="Ejemplo 169 sin .">
+    <input  class="input"type="number" id="altura"  placeholder="Ejemplo 169 sin .">
     <label for="age">Edad:</label>
-    <input  class="input"type="number" id="edad" required placeholder="Ejemplo 20">
+    <input  class="input"type="number" id="edad"  placeholder="Ejemplo 20">
     <label for="gender">Sexo:</label>
-    <select class="input" id="genero" required>
+    <select class="input" id="genero" >
       <option value="hombre">Hombre</option>
       <option value="mujer">Mujer</option>
     </select>
     <label for="activity">Nivel de Actividad:</label>
-    <select class="input" id="activity" required>
+    <select class="input" id="activity" >
       <option value="1.2">Sedentario</option>
       <option value="1.375">Ligeramente Activo</option>
       <option value="1.55">Moderadamente Activo</option>
