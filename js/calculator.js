@@ -37,7 +37,11 @@
                 }
               }
               const resultElement = document.getElementById("resultado")
-            resultElement.innerHTML=`Tu IMC es ${imc.toFixed(2)}`  
+            resultElement.innerHTML=`Tu IMC es ${imc.toFixed(2)}`
+            
+            document.getElementById("weight").value = "";
+            document.getElementById("height").value = "";
+            document.getElementById("age").value = "";
             }
         }
         
